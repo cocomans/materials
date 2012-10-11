@@ -1,0 +1,73 @@
+Version 0.2
+Virginie Dupont
+02/09/2012
+
+- Removed the comments from header file: these are becoming useless
+and/or false and should be in the documentation instead.
+- Removed redundant variables such as ext, ind1, ind2, forcepar,
+strtpar
+- Removed unused variables such as pclass
+- Removed useless output: binary files, secout.txt and secout.dat
+- Removed variables rendered useless by previous change, such as
+nsmpl, numgen, numbks...
+- Removed force history and associated variables (frcdis)
+- Removed restart capability
+- Removed hbor[11] (contact time) and replaced by hbor[12]
+
+Gain from version 0.1: removed 947 lines of code (1644 total, 1529 in
+MD.cpp and 115 in MD.h)
+Runs in 420m28.555s on single processor part of 8-proc intel xeon cpu 3.2GHz
+(sodium in T-1) or a speed-up of 2.6%.
+
+Gain from version 0.0: removed 1448 lines of code (1644 total, 1529 in
+MD.cpp and 115 in MD.h)
+Runs in 420m28.555s on single processor part of 8-proc intel xeon cpu 3.2GHz
+(sodium in T-1) or a speed-up of 5.6%.
+
+--------------------------------------------------
+
+Version 0.1
+Virginie Dupont
+02/01/2012
+
+Removed the capability for having 2 types of atoms based on their
+size. In our applications, we will have only one size. Consequently
+removed stress calculations specific to atoms types and other type
+references in the code.
+
+variables removed: *itype, vxmeanS, vymeanS, vzmeanS, vxmeanL,
+vymeanL, vzmeanL, anvS, anvL, secres11[3][3], secres22[3][3],
+seccnts11[3][3], seccnts22[3][3],seccnts12[3][3], restr11[3][3],
+restr22[3][3], ctavg11[3][3], ctavg22[3][3], ctavg12[3][3],
+reavg11[3][3], reavg22[3][3], vx_Mean_S, vx_Mean_L, resxx11, resxy11,
+resxz11, resyy11, resyz11, reszz11, resxx22, resxy22, resxz22,
+resyy22, resyz22, reszz22, ctsxx11, ctsxy11, ctsxz11, ctsyx11,
+ctsyy11, ctsyz11, ctszx11, ctszy11, ctszz11,  ctsxx22, ctsxy22,
+ctsxz22, ctsyx22, ctsyy22, ctsyz22, ctszx22, ctszy22, ctszz22,
+ctsxx12, ctsxy12, ctsxz12, ctsyx12, ctsyy12, ctsyz12, ctszx12,
+ctszy12, ctszz12, frxx11, frxy11, frxz11, fryx11, fryy11, fryz11,
+frzx11, frzy11, frzz11, frxx22, frxy22, frxz22, fryx22, fryy22,
+fryz22, frzx22, frzy22, frzz22, frxx12, frxy12, frxz12, fryx12,
+fryy12, fryz12, frzx12, frzy12, frzz12
+
+added variables: vxmean, vymean, vzmean, anv, vx_Mean 
+
+Gain from version 0.0: removed 501 lines of code (2591 total, 2253 in
+MD.cpp and 338 in MD.h)
+Runs in 431m56.704s on single processor part of 8-proc intel xeon cpu 3.2GHz
+(sodium in T-1) or a speed-up of 3.05 %.
+
+
+----------------------------------------------
+ Version 0
+Virginie Dupont
+02/01/2012
+
+This version is a literal translation of java code from
+cartablanca. Highly unoptimized. 
+
+Data: 3092 lines of code total (2742 in MD.cpp and 350 in MD.h)
+Runs in 445m 31.966s (real time from time command) on single processor part of 8-proc intel xeon cpu 3.2GHz
+(sodium in T-1).
+
+

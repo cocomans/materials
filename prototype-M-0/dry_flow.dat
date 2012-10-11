@@ -1,0 +1,14 @@
+epsilon
+0.409
+sigma
+2.338
+dt_md
+0.002 
+trelax
+20
+vx_mean
+0.0 
+freq
+100
+maxtime
+0.2
