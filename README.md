@@ -24,3 +24,9 @@ The `MD` mini-app takes either zero or two command line arguments.  If no argume
 The `matminiapp` mini-app takes no arguments.
 
 Input file names are hard-wired into the code.  See the documentation for descriptions of what files are used and how to interpret and modify their contents.
+
+
+License
+-------
+
+Los Alamos National Security, LLC (LANS) owns the copyright to the CoCoMANS Materials Mini-Apps, which it identifies internally as LA-CC-12-045.  The license is BSD 3.  See [LICENSE.md](https://github.com/cocomans/materials/blob/master/LICENSE.md) for the full text.
